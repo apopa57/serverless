@@ -14,6 +14,8 @@ Resources:
     Properties:
       DefinitionUri: statemachine.asl.yml
       Type: EXPRESS
+      Tracing:
+        Enabled: true
       DefinitionSubstitutions:
         Function1: !GetAtt Function1.Arn
         Function2: !GetAtt Function2.Arn
